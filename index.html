@@ -1,554 +1,840 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>박정민 | Backend Developer & Study Lab</title>
-  <meta name="description" content="백엔드 엔지니어 박정민의 포트폴리오 및 인터랙티브 웹 학습 저장소" />
-  
-  <!-- OG Meta -->
-  <meta property="og:title" content="박정민 | Backend Developer & Study Lab" />
-  <meta property="og:description" content="백엔드 시스템 설계부터 인터랙티브 프론트엔드 개념 정리까지, 공부한 내용을 담은 개발 포트폴리오" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://pjmoo.github.io/portfolio/" />
-  <meta property="og:image" content="https://pjmoo.github.io/portfolio/preview.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박정민 | Backend Developer & Study Lab</title>
+    <meta
+      name="description"
+      content="백엔드 엔지니어 박정민의 포트폴리오 및 인터랙티브 웹 학습 저장소"
+    />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="박정민 | Backend Developer & Study Lab" />
-  <meta name="twitter:description" content="백엔드 시스템 설계부터 인터랙티브 프론트엔드 개념 정리까지, 공부한 내용을 담은 개발 포트폴리오" />
-  <meta name="twitter:image" content="https://pjmoo.github.io/portfolio/preview.png" />
+    <!-- OG Meta -->
+    <meta
+      property="og:title"
+      content="박정민 | Backend Developer & Study Lab"
+    />
+    <meta
+      property="og:description"
+      content="백엔드 시스템 설계부터 인터랙티브 프론트엔드 개념 정리까지, 공부한 내용을 담은 개발 포트폴리오"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pjmoo.github.io/portfolio/" />
+    <meta
+      property="og:image"
+      content="https://pjmoo.github.io/portfolio/preview.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-  <!-- Fonts & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-</head>
-<body>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="박정민 | Backend Developer & Study Lab"
+    />
+    <meta
+      name="twitter:description"
+      content="백엔드 시스템 설계부터 인터랙티브 프론트엔드 개념 정리까지, 공부한 내용을 담은 개발 포트폴리오"
+    />
+    <meta
+      name="twitter:image"
+      content="https://pjmoo.github.io/portfolio/preview.png"
+    />
 
-  <!-- Navigation -->
-  <nav id="nav-bar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">
-        <span class="logo-badge">&lt;PJM /&gt;</span>
-        <span class="logo-text">PORTFOLIO</span>
-      </a>
-      <div class="nav-menu">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#study-lab" class="nav-link">Study Lab</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#guestbook" class="nav-link">Guestbook</a>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="nav-bar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-badge">&lt;PJM /&gt;</span>
+          <span class="logo-text">PORTFOLIO</span>
+        </a>
+        <div class="nav-menu">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#study-lab" class="nav-link">Study Lab</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#guestbook" class="nav-link">Guestbook</a>
+        </div>
+        <button
+          class="menu-toggle"
+          id="menu-toggle-btn"
+          aria-label="Toggle Menu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
       </div>
-      <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Main Container -->
-  <main class="main-content">
+    <!-- Main Container -->
+    <main class="main-content">
+      <!-- Hero / Profile -->
+      <section id="hero" class="hero-section">
+        <div class="hero-glow"></div>
+        <div class="hero-container">
+          <div class="hero-info">
+            <span class="hero-tag">👋 Welcome to my Dev Space</span>
+            <h1 class="hero-title">
+              안녕하세요, <br /><span class="gradient-text"
+                >백엔드 개발자 박정민</span
+              >입니다.
+            </h1>
+            <p class="hero-subtitle">
+              시스템의 신뢰성과 안정적인 API 아키텍처 설계를 지향합니다. 단순히
+              작동하는 코드를 넘어 메모리 사용량, 실행 효율, 클라우드 자원
+              비용을 고민하는 개발을 추구하고 있으며, 공부한 핵심 기술과 동작
+              원리를 시각화하여 기록하고 있습니다.
+            </p>
+            <div class="hero-cta">
+              <a href="#study-lab" class="btn btn-primary">Study Lab 입장</a>
+              <a href="#projects" class="btn btn-secondary">프로젝트 보기</a>
+            </div>
+          </div>
 
-    <!-- Hero / Profile -->
-    <section id="hero" class="hero-section">
-      <div class="hero-glow"></div>
-      <div class="hero-container">
-        <div class="hero-info">
-          <span class="hero-tag">👋 Welcome to my Dev Space</span>
-          <h1 class="hero-title">안녕하세요, <br><span class="gradient-text">백엔드 개발자 박정민</span>입니다.</h1>
-          <p class="hero-subtitle">
-            시스템의 신뢰성과 안정적인 API 아키텍처 설계를 지향합니다. 
-            단순히 작동하는 코드를 넘어 메모리 사용량, 실행 효율, 클라우드 자원 비용을 고민하는 개발을 추구하고 있으며, 
-            공부한 핵심 기술과 동작 원리를 시각화하여 기록하고 있습니다.
-          </p>
-          <div class="hero-cta">
-            <a href="#study-lab" class="btn btn-primary">Study Lab 입장</a>
-            <a href="#projects" class="btn btn-secondary">프로젝트 보기</a>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-num" id="stat-days">13+</span>
+              <span class="stat-label">Study Days</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" id="stat-concepts">25+</span>
+              <span class="stat-label">Mastered Concepts</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" id="stat-demos">4+</span>
+              <span class="stat-label">Interactive Playgrounds</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" id="stat-commits">100%</span>
+              <span class="stat-label">Commit Consistency</span>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="hero-stats">
-          <div class="stat-card">
-            <span class="stat-num" id="stat-days">13+</span>
-            <span class="stat-label">Study Days</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num" id="stat-concepts">25+</span>
-            <span class="stat-label">Mastered Concepts</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num" id="stat-demos">4+</span>
-            <span class="stat-label">Interactive Playgrounds</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num" id="stat-commits">100%</span>
-            <span class="stat-label">Commit Consistency</span>
-          </div>
+      <!-- About Me -->
+      <section id="about" class="about-section scroll-spy">
+        <div class="section-header">
+          <span class="section-subtitle">/ Who I Am</span>
+          <h2 class="section-title">소개 및 핵심 가치</h2>
+          <div class="header-line"></div>
         </div>
-      </div>
-    </section>
-
-    <!-- About Me -->
-    <section id="about" class="about-section scroll-spy">
-      <div class="section-header">
-        <span class="section-subtitle">/ Who I Am</span>
-        <h2 class="section-title">소개 및 핵심 가치</h2>
-        <div class="header-line"></div>
-      </div>
-      <div class="about-grid">
-        <div class="about-card intro-card">
-          <h3>"보이지 않는 곳의 견고한 설계를 만듭니다"</h3>
-          <p>
-            대용량 분산 트랙잭션 원장 시스템의 멱등성 필터 최적화, Redis Geospatial 인덱스를 활용한 실시간 배차 엔진 구현, 
-            그리고 Spring Batch를 이용한 정산 자동화 프로세스 구축 등 백엔드 분야의 다양한 문제를 해결해 왔습니다.
-          </p>
-          <p>
-            웹 표준 레이아웃과 자바스크립트의 실행 컨텍스트, 스코프 체인, 비동기 런타임의 핵심 원리를 명확하게 이해하고 활용하는 것도 
-            웹 풀스택 엔지니어링의 핵심 역량이라고 믿습니다.
-          </p>
-          <div class="profile-details">
-            <div class="detail-item"><span class="detail-label">Location</span><span class="detail-val">Seoul, South Korea</span></div>
-            <div class="detail-item"><span class="detail-label">Email</span><span class="detail-val">00pjmoooo@gmail.com</span></div>
-            <div class="detail-item"><span class="detail-label">GitHub</span><span class="detail-val"><a href="https://github.com/pjmoo" target="_blank" class="text-link">github.com/pjmoo</a></span></div>
-          </div>
-        </div>
-
-        <div class="about-card philosophy-card">
-          <h3>세 가지 개발 철학</h3>
-          <ul class="philosophy-list">
-            <li>
-              <div class="ph-icon">🛡️</div>
-              <div class="ph-content">
-                <strong>데이터 무결성과 멱등성 보장</strong>
-                <p>결제와 송금 등 핵심 비즈니스 도메인에서 예외 복구력과 동시성 제어를 최우선으로 둡니다.</p>
+        <div class="about-grid">
+          <div class="about-card intro-card">
+            <h3>"보이지 않는 곳의 견고한 설계를 만듭니다"</h3>
+            <p>
+              대용량 분산 트랙잭션 원장 시스템의 멱등성 필터 최적화, Redis
+              Geospatial 인덱스를 활용한 실시간 배차 엔진 구현, 그리고 Spring
+              Batch를 이용한 정산 자동화 프로세스 구축 등 백엔드 분야의 다양한
+              문제를 해결해 왔습니다.
+            </p>
+            <p>
+              웹 표준 레이아웃과 자바스크립트의 실행 컨텍스트, 스코프 체인,
+              비동기 런타임의 핵심 원리를 명확하게 이해하고 활용하는 것도 웹
+              풀스택 엔지니어링의 핵심 역량이라고 믿습니다.
+            </p>
+            <div class="profile-details">
+              <div class="detail-item">
+                <span class="detail-label">Location</span
+                ><span class="detail-val">Seoul, South Korea</span>
               </div>
-            </li>
-            <li>
-              <div class="ph-icon">⚡</div>
-              <div class="ph-content">
-                <strong>동작 원리 분석 & 기록</strong>
-                <p>자바스크립트의 스코프 체인, 클로저, 호이스팅을 실행 컨텍스트 단위로 분석하며 작동 이유를 추적합니다.</p>
+              <div class="detail-item">
+                <span class="detail-label">Email</span
+                ><span class="detail-val">00pjmoooo@gmail.com</span>
               </div>
-            </li>
-            <li>
-              <div class="ph-icon">🚀</div>
-              <div class="ph-content">
-                <strong>지속적인 자동화와 인프라 최적화</strong>
-                <p>배포 프로세스 자동화 및 리소스 모니터링을 통해 리소스 낭비와 비효율을 지속적으로 걷어냅니다.</p>
+              <div class="detail-item">
+                <span class="detail-label">GitHub</span
+                ><span class="detail-val"
+                  ><a
+                    href="https://github.com/pjmoo"
+                    target="_blank"
+                    class="text-link"
+                    >github.com/pjmoo</a
+                  ></span
+                >
               </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+            </div>
+          </div>
 
-    <!-- Core Stack / Skills -->
-    <section id="skills" class="skills-section scroll-spy">
-      <div class="section-header">
-        <span class="section-subtitle">/ Tech Stack</span>
-        <h2 class="section-title">보유 기술 및 학습 숙련도</h2>
-        <div class="header-line"></div>
-      </div>
-      <div class="skills-grid">
-        <!-- Backend Core -->
-        <div class="skill-category-card">
-          <div class="category-header">
-            <span class="category-icon">⚙️</span>
-            <h3>Backend System</h3>
-          </div>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-info"><span>Java / Spring Boot</span><span class="skill-pct">90%</span></div>
-              <div class="skill-bar"><div class="skill-progress" style="width: 90%; background: var(--gradient-1);"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>Go (Golang)</span><span class="skill-pct">75%</span></div>
-              <div class="skill-bar"><div class="skill-progress" style="width: 75%; background: var(--gradient-1);"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>PostgreSQL / MySQL</span><span class="skill-pct">85%</span></div>
-              <div class="skill-bar"><div class="skill-progress" style="width: 85%; background: var(--gradient-1);"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>Redis (Caching / Geospatial)</span><span class="skill-pct">80%</span></div>
-              <div class="skill-bar"><div class="skill-progress" style="width: 80%; background: var(--gradient-1);"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Web Frontend -->
-        <div class="skill-category-card">
-          <div class="category-header">
-            <span class="category-icon">🌐</span>
-            <h3>Web Frontend (CSS/JS)</h3>
-          </div>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-info"><span>JavaScript (Closures/ES6+/Maps)</span><span class="skill-pct">85%</span></div>
-              <div class="skill-bar"><div class="skill-progress" style="width: 85%; background: var(--gradient-2);"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>CSS Grid & Flexbox layouts</span><span class="skill-pct">80%</span></div>
-              <div class="skill-bar"><div class="skill-progress" style="width: 80%; background: var(--gradient-2);"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>Tailwind CSS / Bootstrap</span><span class="skill-pct">70%</span></div>
-              <div class="skill-bar"><div class="skill-progress" style="width: 70%; background: var(--gradient-2);"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>DOM Manipulation & Events</span><span class="skill-pct">80%</span></div>
-              <div class="skill-bar"><div class="skill-progress" style="width: 80%; background: var(--gradient-2);"></div></div>
-            </div>
+          <div class="about-card philosophy-card">
+            <h3>세 가지 개발 철학</h3>
+            <ul class="philosophy-list">
+              <li>
+                <div class="ph-icon">🛡️</div>
+                <div class="ph-content">
+                  <strong>데이터 무결성과 멱등성 보장</strong>
+                  <p>
+                    결제와 송금 등 핵심 비즈니스 도메인에서 예외 복구력과 동시성
+                    제어를 최우선으로 둡니다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="ph-icon">⚡</div>
+                <div class="ph-content">
+                  <strong>동작 원리 분석 & 기록</strong>
+                  <p>
+                    자바스크립트의 스코프 체인, 클로저, 호이스팅을 실행 컨텍스트
+                    단위로 분석하며 작동 이유를 추적합니다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="ph-icon">🚀</div>
+                <div class="ph-content">
+                  <strong>지속적인 자동화와 인프라 최적화</strong>
+                  <p>
+                    배포 프로세스 자동화 및 리소스 모니터링을 통해 리소스 낭비와
+                    비효율을 지속적으로 걷어냅니다.
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
+      </section>
 
-        <!-- DevOps & Tools -->
-        <div class="skill-category-card">
-          <div class="category-header">
-            <span class="category-icon">🐳</span>
-            <h3>DevOps & Infrastructure</h3>
+      <!-- Core Stack / Skills -->
+      <section id="skills" class="skills-section scroll-spy">
+        <div class="section-header">
+          <span class="section-subtitle">/ Tech Stack</span>
+          <h2 class="section-title">보유 기술 및 학습 숙련도</h2>
+          <div class="header-line"></div>
+        </div>
+        <div class="skills-grid">
+          <!-- Backend Core -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon">⚙️</span>
+              <h3>Backend System</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Java / Spring Boot</span
+                  ><span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div
+                    class="skill-progress"
+                    style="width: 90%; background: var(--gradient-1)"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Go (Golang)</span><span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div
+                    class="skill-progress"
+                    style="width: 75%; background: var(--gradient-1)"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>PostgreSQL / MySQL</span
+                  ><span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div
+                    class="skill-progress"
+                    style="width: 85%; background: var(--gradient-1)"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Redis (Caching / Geospatial)</span
+                  ><span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div
+                    class="skill-progress"
+                    style="width: 80%; background: var(--gradient-1)"
+                  ></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-info"><span>Docker & Docker Compose</span><span class="skill-pct">80%</span></div>
-              <div class="skill-bar"><div class="skill-progress" style="width: 80%; background: var(--gradient-3);"></div></div>
+
+          <!-- Web Frontend -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon">🌐</span>
+              <h3>Web Frontend (CSS/JS)</h3>
             </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>AWS (ECS, RDS, S3, VPC)</span><span class="skill-pct">75%</span></div>
-              <div class="skill-bar"><div class="skill-progress" style="width: 75%; background: var(--gradient-3);"></div></div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>JavaScript (Closures/ES6+/Maps)</span
+                  ><span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div
+                    class="skill-progress"
+                    style="width: 85%; background: var(--gradient-2)"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>CSS Grid & Flexbox layouts</span
+                  ><span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div
+                    class="skill-progress"
+                    style="width: 80%; background: var(--gradient-2)"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Tailwind CSS / Bootstrap</span
+                  ><span class="skill-pct">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div
+                    class="skill-progress"
+                    style="width: 70%; background: var(--gradient-2)"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>DOM Manipulation & Events</span
+                  ><span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div
+                    class="skill-progress"
+                    style="width: 80%; background: var(--gradient-2)"
+                  ></div>
+                </div>
+              </div>
             </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>CI/CD (GitHub Actions)</span><span class="skill-pct">70%</span></div>
-              <div class="skill-bar"><div class="skill-progress" style="width: 70%; background: var(--gradient-3);"></div></div>
+          </div>
+
+          <!-- DevOps & Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon">🐳</span>
+              <h3>DevOps & Infrastructure</h3>
             </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>Linux Environment & Git</span><span class="skill-pct">85%</span></div>
-              <div class="skill-bar"><div class="skill-progress" style="width: 85%; background: var(--gradient-3);"></div></div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Docker & Docker Compose</span
+                  ><span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div
+                    class="skill-progress"
+                    style="width: 80%; background: var(--gradient-3)"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>AWS (ECS, RDS, S3, VPC)</span
+                  ><span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div
+                    class="skill-progress"
+                    style="width: 75%; background: var(--gradient-3)"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>CI/CD (GitHub Actions)</span
+                  ><span class="skill-pct">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div
+                    class="skill-progress"
+                    style="width: 70%; background: var(--gradient-3)"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Linux Environment & Git</span
+                  ><span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div
+                    class="skill-progress"
+                    style="width: 85%; background: var(--gradient-3)"
+                  ></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Study Lab (Interactive Main Showcase) -->
-    <section id="study-lab" class="study-lab-section scroll-spy">
-      <div class="section-header">
-        <span class="section-subtitle">/ Interactive Explorer</span>
-        <h2 class="section-title">학습 연구소 (Study Lab)</h2>
-        <div class="header-line"></div>
-        <p class="section-desc">일자별로 학습한 CSS 레이아웃 이론과 핵심 JavaScript 원리들을 시각적 데모와 라이브 런타임 콘솔로 탐색할 수 있습니다.</p>
-      </div>
+      <!-- Study Lab (Interactive Main Showcase) -->
+      <section id="study-lab" class="study-lab-section scroll-spy">
+        <div class="section-header">
+          <span class="section-subtitle">/ Interactive Explorer</span>
+          <h2 class="section-title">학습 연구소 (Study Lab)</h2>
+          <div class="header-line"></div>
+          <p class="section-desc">
+            일자별로 학습한 CSS 레이아웃 이론과 핵심 JavaScript 원리들을 시각적
+            데모와 라이브 런타임 콘솔로 탐색할 수 있습니다.
+          </p>
+        </div>
 
-      <!-- Tabs Navigation -->
-      <div class="tab-nav">
-        <button class="tab-btn active" data-tab="tab-css">🎨 CSS Layout Playground</button>
-        <button class="tab-btn" data-tab="tab-js">⚡ JavaScript Sandbox</button>
-        <button class="tab-btn" data-tab="tab-timeline">📅 Daily Learning Timeline</button>
-      </div>
+        <!-- Tabs Navigation -->
+        <div class="tab-nav">
+          <button class="tab-btn active" data-tab="tab-css">
+            🎨 CSS Layout Playground
+          </button>
+          <button class="tab-btn" data-tab="tab-js">
+            ⚡ JavaScript Sandbox
+          </button>
+          <button class="tab-btn" data-tab="tab-timeline">
+            📅 Daily Learning Timeline
+          </button>
+        </div>
 
-      <!-- Tab Contents -->
-      <div class="tab-content-container">
+        <!-- Tab Contents -->
+        <div class="tab-content-container">
+          <!-- CSS Tab -->
+          <div class="tab-pane active" id="tab-css">
+            <div class="css-playground-grid">
+              <div class="playground-controls">
+                <h3>Layout Parameters</h3>
 
-        <!-- CSS Tab -->
-        <div class="tab-pane active" id="tab-css">
-          <div class="css-playground-grid">
-            <div class="playground-controls">
-              <h3>Layout Parameters</h3>
-              
-              <!-- Flex Direction -->
-              <div class="control-group">
-                <label>flex-direction</label>
-                <div class="btn-group" data-prop="flex-direction">
-                  <button class="btn btn-small active" data-val="row">row</button>
-                  <button class="btn btn-small" data-val="row-reverse">row-rev</button>
-                  <button class="btn btn-small" data-val="column">column</button>
-                  <button class="btn btn-small" data-val="column-reverse">col-rev</button>
+                <!-- Flex Direction -->
+                <div class="control-group">
+                  <label>flex-direction</label>
+                  <div class="btn-group" data-prop="flex-direction">
+                    <button class="btn btn-small active" data-val="row">
+                      row
+                    </button>
+                    <button class="btn btn-small" data-val="row-reverse">
+                      row-rev
+                    </button>
+                    <button class="btn btn-small" data-val="column">
+                      column
+                    </button>
+                    <button class="btn btn-small" data-val="column-reverse">
+                      col-rev
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Justify Content -->
+                <div class="control-group">
+                  <label>justify-content</label>
+                  <div class="select-wrapper">
+                    <select id="justify-content-select">
+                      <option value="flex-start" selected>flex-start</option>
+                      <option value="center">center</option>
+                      <option value="flex-end">flex-end</option>
+                      <option value="space-between">space-between</option>
+                      <option value="space-around">space-around</option>
+                      <option value="space-evenly">space-evenly</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Align Items -->
+                <div class="control-group">
+                  <label>align-items</label>
+                  <div class="btn-group" data-prop="align-items">
+                    <button class="btn btn-small active" data-val="stretch">
+                      stretch
+                    </button>
+                    <button class="btn btn-small" data-val="flex-start">
+                      flex-start
+                    </button>
+                    <button class="btn btn-small" data-val="center">
+                      center
+                    </button>
+                    <button class="btn btn-small" data-val="flex-end">
+                      flex-end
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Gap Size -->
+                <div class="control-group">
+                  <label
+                    >gap size:
+                    <span id="gap-val-display" class="mono text-highlight"
+                      >15px</span
+                    ></label
+                  >
+                  <input
+                    type="range"
+                    id="gap-range"
+                    min="0"
+                    max="40"
+                    value="15"
+                    class="slider"
+                  />
+                </div>
+
+                <!-- Box Sizing Visualizer -->
+                <div class="control-group border-top-divider">
+                  <label class="toggle-container">
+                    <input type="checkbox" id="box-sizing-toggle" />
+                    <span class="toggle-slider"></span>
+                    <span class="toggle-label"
+                      >Use <code class="mono">border-box</code> (전체 크기
+                      유지)</span
+                    >
+                  </label>
+                  <div
+                    class="callout callout-info"
+                    style="margin-top: 10px; font-size: 11px"
+                  >
+                    <span class="callout-icon">💡</span>
+                    <span id="box-sizing-desc"
+                      >현재 <code>content-box</code> 상태: 패딩(20px)과
+                      보더(4px)가 설정값 너비(100px) 외부로 추가되어 상자의
+                      실면적이 증가합니다.</span
+                    >
+                  </div>
                 </div>
               </div>
 
-              <!-- Justify Content -->
-              <div class="control-group">
-                <label>justify-content</label>
-                <div class="select-wrapper">
-                  <select id="justify-content-select">
-                    <option value="flex-start" selected>flex-start</option>
-                    <option value="center">center</option>
-                    <option value="flex-end">flex-end</option>
-                    <option value="space-between">space-between</option>
-                    <option value="space-around">space-around</option>
-                    <option value="space-evenly">space-evenly</option>
+              <div class="playground-preview">
+                <div class="preview-header">
+                  <div class="window-dot red"></div>
+                  <div class="window-dot yellow"></div>
+                  <div class="window-dot green"></div>
+                  <span class="preview-title mono"
+                    >Flexbox & Box-sizing Live Visualizer</span
+                  >
+                </div>
+                <div class="preview-stage-wrap">
+                  <div class="preview-stage" id="flex-stage">
+                    <div class="flex-box-item item-1">
+                      <span class="box-num">1</span>
+                      <span class="box-size-label mono">100px</span>
+                    </div>
+                    <div class="flex-box-item item-2">
+                      <span class="box-num">2</span>
+                      <span class="box-size-label mono">100px</span>
+                    </div>
+                    <div class="flex-box-item item-3">
+                      <span class="box-num">3</span>
+                      <span class="box-size-label mono">100px</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- JS Tab -->
+          <div class="tab-pane" id="tab-js">
+            <div class="js-sandbox-grid">
+              <div class="sandbox-editor">
+                <div class="editor-header">
+                  <label for="code-snippet-select" class="sr-only"
+                    >예제 선택</label
+                  >
+                  <select id="code-snippet-select" class="snippet-select">
+                    <option value="closure" selected>
+                      🔒 예제 01 - 클로저 (Closure 상태 은닉)
+                    </option>
+                    <option value="map-vs-obj">
+                      🗺️ 예제 02 - Map vs Object 차이 분석
+                    </option>
+                    <option value="hoisting">
+                      ⬆️ 예제 03 - 실행 컨텍스트와 호이스팅 (Hoisting)
+                    </option>
+                    <option value="scope-chain">
+                      🔭 예제 04 - 렉시컬 스코프 체인 (Scope Chain)
+                    </option>
+                  </select>
+                  <button class="btn btn-green btn-run" id="btn-run-code">
+                    ▶ RUN CODE
+                  </button>
+                </div>
+
+                <div class="code-editor-area">
+                  <div class="line-gutter" id="editor-gutter"></div>
+                  <textarea
+                    id="code-textarea"
+                    spellcheck="false"
+                    aria-label="JavaScript Editor Code"
+                  ></textarea>
+                </div>
+
+                <div class="editor-footer">
+                  <span class="editor-lang mono"
+                    >JavaScript Engine (V8 Simulated Runtime)</span
+                  >
+                </div>
+              </div>
+
+              <div class="sandbox-console">
+                <div class="console-header">
+                  <span>🖥️ Execution Output Console</span>
+                  <button
+                    class="btn btn-secondary btn-clear"
+                    id="btn-clear-console"
+                  >
+                    Clear
+                  </button>
+                </div>
+                <div class="console-output" id="console-logs">
+                  <div class="console-line system-line">
+                    &gt; JavaScript Sandbox 초기화 완료. 실행할 코드를 선택하고
+                    [RUN CODE]를 눌러보세요.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Tab -->
+          <div class="tab-pane" id="tab-timeline">
+            <div class="timeline-container" id="timeline-list">
+              <!-- Timeline items will be injected by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selected Projects -->
+      <section id="projects" class="projects-section scroll-spy">
+        <div class="section-header">
+          <span class="section-subtitle">/ Selected Works</span>
+          <h2 class="section-title">주요 개발 프로젝트</h2>
+          <div class="header-line"></div>
+        </div>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-top">
+              <div class="project-tags">
+                <span class="badge badge-tech">Go (Golang)</span>
+                <span class="badge badge-tech">PostgreSQL</span>
+                <span class="badge badge-tech">Kafka</span>
+                <span class="badge badge-tech">Redis</span>
+              </div>
+              <span class="project-date">2024.03 - 2025.01</span>
+            </div>
+            <h3 class="project-name">대용량 분산 트랜잭션 원장 시스템 구축</h3>
+            <p class="project-summary">
+              핀테크 결제/송금 서비스의 원장(Ledger) 처리 백엔드를 이벤트 소싱
+              패턴을 기반으로 재구축한 프로젝트입니다. 분산 트랜잭션 상황에서의
+              동시성 결제 오류 방지를 위해 멱등성 필터링 레이어를 도입하고,
+              데이터 정합성을 철저히 지켰습니다.
+            </p>
+            <ul class="project-points">
+              <li>
+                Kafka를 활용한 이벤트 소싱 기반 비동기 거래 내역 로깅 시스템
+                설계
+              </li>
+              <li>
+                DB Connection pool 병목점 모니터링을 통한 성능 튜닝으로 TPS 280%
+                향상
+              </li>
+              <li>Redis를 이용한 다중 분산 이중 결제 방지 멱등 필터 구현</li>
+            </ul>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-top">
+              <div class="project-tags">
+                <span class="badge badge-tech">Java / Spring Boot</span>
+                <span class="badge badge-tech">Redis Geospatial</span>
+                <span class="badge badge-tech">MySQL</span>
+                <span class="badge badge-tech">RabbitMQ</span>
+              </div>
+              <span class="project-date">2022.08 - 2023.11</span>
+            </div>
+            <h3 class="project-name">실시간 위치 기반 차량 배차 엔진 개발</h3>
+            <p class="project-summary">
+              운영자와 이용자의 위치 데이터를 수집하여 반경 내 최적의 승용
+              수단을 자동 배차 및 실시간 매칭해주는 서버 애플리케이션입니다.
+              위치 갱신 주기를 제어하고 빠른 공간 매칭 성능을 달성했습니다.
+            </p>
+            <ul class="project-points">
+              <li>
+                Redis GeoIndex를 도입하여 복잡한 위치 기반 반경 검색 처리 속도
+                최적화
+              </li>
+              <li>
+                매칭 매트릭스 계산 알고리즘의 비동기화 및 큐 기반 작업 분산
+              </li>
+              <li>
+                실시간 위치 이동 트래픽 과부하 방지를 위한 Throttling 및 배치
+                저장 설계
+              </li>
+            </ul>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-top">
+              <div class="project-tags">
+                <span class="badge badge-tech">Java / Spring Batch</span>
+                <span class="badge badge-tech">MySQL</span>
+                <span class="badge badge-tech">Docker</span>
+                <span class="badge badge-tech">Jenkins</span>
+              </div>
+              <span class="project-date">2020.02 - 2023.04</span>
+            </div>
+            <h3 class="project-name">정산 자동화 시스템 및 배포 환경 최적화</h3>
+            <p class="project-summary">
+              매월 수작업으로 대조하던 복잡한 정산 업무를 자동화하고 수억 건의
+              데이터 처리에 안정성을 더해준 Batch 프로세스 프로젝트입니다.
+            </p>
+            <ul class="project-points">
+              <li>
+                Spring Batch Chunk 지향 프로세싱 구조를 적용해 청크 단위 대용량
+                트랜잭션 실행
+              </li>
+              <li>
+                기존 결제 테이블 풀 스캔 쿼리를 인덱스 커버링 쿼리로 튜닝하여
+                쿼리 타임아웃 100% 해소
+              </li>
+              <li>
+                Docker Compose 및 젠킨스를 연동하여 개발 및 운영 배포 환경의
+                완전한 컨테이너 자동화 구성
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Guestbook & Contact -->
+      <section id="guestbook" class="guestbook-section scroll-spy">
+        <div class="section-header">
+          <span class="section-subtitle">/ Guestbook & Feedback</span>
+          <h2 class="section-title">방명록 및 의견 작성</h2>
+          <div class="header-line"></div>
+          <p class="section-desc">
+            자바스크립트 LocalStorage 데이터 조작 개념을 활용하여 로컬
+            브라우저에 저장되는 실시간 방명록 피드입니다.
+          </p>
+        </div>
+
+        <div class="guestbook-layout">
+          <!-- Form -->
+          <div class="guestbook-form-card">
+            <h3>메시지 남기기</h3>
+            <form id="comment-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="input-author">이름 / 닉네임</label>
+                  <input
+                    type="text"
+                    id="input-author"
+                    placeholder="이름을 입력하세요"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="input-role">역할 / 직군</label>
+                  <select id="input-role">
+                    <option value="developer">개발자 (Developer)</option>
+                    <option value="designer">디자이너 (Designer)</option>
+                    <option value="pm">기획자 / PM (Product Manager)</option>
+                    <option value="visitor" selected>
+                      일반 방문자 (Visitor)
+                    </option>
                   </select>
                 </div>
               </div>
-
-              <!-- Align Items -->
-              <div class="control-group">
-                <label>align-items</label>
-                <div class="btn-group" data-prop="align-items">
-                  <button class="btn btn-small active" data-val="stretch">stretch</button>
-                  <button class="btn btn-small" data-val="flex-start">flex-start</button>
-                  <button class="btn btn-small" data-val="center">center</button>
-                  <button class="btn btn-small" data-val="flex-end">flex-end</button>
-                </div>
-              </div>
-
-              <!-- Gap Size -->
-              <div class="control-group">
-                <label>gap size: <span id="gap-val-display" class="mono text-highlight">15px</span></label>
-                <input type="range" id="gap-range" min="0" max="40" value="15" class="slider">
-              </div>
-
-              <!-- Box Sizing Visualizer -->
-              <div class="control-group border-top-divider">
-                <label class="toggle-container">
-                  <input type="checkbox" id="box-sizing-toggle">
-                  <span class="toggle-slider"></span>
-                  <span class="toggle-label">Use <code class="mono">border-box</code> (전체 크기 유지)</span>
-                </label>
-                <div class="callout callout-info" style="margin-top: 10px; font-size: 11px;">
-                  <span class="callout-icon">💡</span>
-                  <span id="box-sizing-desc">현재 <code>content-box</code> 상태: 패딩(20px)과 보더(4px)가 설정값 너비(100px) 외부로 추가되어 상자의 실면적이 증가합니다.</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="playground-preview">
-              <div class="preview-header">
-                <div class="window-dot red"></div>
-                <div class="window-dot yellow"></div>
-                <div class="window-dot green"></div>
-                <span class="preview-title mono">Flexbox & Box-sizing Live Visualizer</span>
-              </div>
-              <div class="preview-stage-wrap">
-                <div class="preview-stage" id="flex-stage">
-                  <div class="flex-box-item item-1">
-                    <span class="box-num">1</span>
-                    <span class="box-size-label mono">100px</span>
-                  </div>
-                  <div class="flex-box-item item-2">
-                    <span class="box-num">2</span>
-                    <span class="box-size-label mono">100px</span>
-                  </div>
-                  <div class="flex-box-item item-3">
-                    <span class="box-num">3</span>
-                    <span class="box-size-label mono">100px</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- JS Tab -->
-        <div class="tab-pane" id="tab-js">
-          <div class="js-sandbox-grid">
-            <div class="sandbox-editor">
-              <div class="editor-header">
-                <label for="code-snippet-select" class="sr-only">예제 선택</label>
-                <select id="code-snippet-select" class="snippet-select">
-                  <option value="closure" selected>🔒 예제 01 - 클로저 (Closure 상태 은닉)</option>
-                  <option value="map-vs-obj">🗺️ 예제 02 - Map vs Object 차이 분석</option>
-                  <option value="hoisting">⬆️ 예제 03 - 실행 컨텍스트와 호이스팅 (Hoisting)</option>
-                  <option value="scope-chain">🔭 예제 04 - 렉시컬 스코프 체인 (Scope Chain)</option>
-                </select>
-                <button class="btn btn-green btn-run" id="btn-run-code">▶ RUN CODE</button>
-              </div>
-              
-              <div class="code-editor-area">
-                <div class="line-gutter" id="editor-gutter"></div>
-                <textarea id="code-textarea" spellcheck="false" aria-label="JavaScript Editor Code"></textarea>
-              </div>
-              
-              <div class="editor-footer">
-                <span class="editor-lang mono">JavaScript Engine (V8 Simulated Runtime)</span>
-              </div>
-            </div>
-
-            <div class="sandbox-console">
-              <div class="console-header">
-                <span>🖥️ Execution Output Console</span>
-                <button class="btn btn-secondary btn-clear" id="btn-clear-console">Clear</button>
-              </div>
-              <div class="console-output" id="console-logs">
-                <div class="console-line system-line">&gt; JavaScript Sandbox 초기화 완료. 실행할 코드를 선택하고 [RUN CODE]를 눌러보세요.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Timeline Tab -->
-        <div class="tab-pane" id="tab-timeline">
-          <div class="timeline-container" id="timeline-list">
-            <!-- Timeline items will be injected by JavaScript -->
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Selected Projects -->
-    <section id="projects" class="projects-section scroll-spy">
-      <div class="section-header">
-        <span class="section-subtitle">/ Selected Works</span>
-        <h2 class="section-title">주요 개발 프로젝트</h2>
-        <div class="header-line"></div>
-      </div>
-      <div class="projects-grid">
-        
-        <!-- Project 1 -->
-        <div class="project-card">
-          <div class="project-top">
-            <div class="project-tags">
-              <span class="badge badge-tech">Go (Golang)</span>
-              <span class="badge badge-tech">PostgreSQL</span>
-              <span class="badge badge-tech">Kafka</span>
-              <span class="badge badge-tech">Redis</span>
-            </div>
-            <span class="project-date">2024.03 - 2025.01</span>
-          </div>
-          <h3 class="project-name">대용량 분산 트랜잭션 원장 시스템 구축</h3>
-          <p class="project-summary">
-            핀테크 결제/송금 서비스의 원장(Ledger) 처리 백엔드를 이벤트 소싱 패턴을 기반으로 재구축한 프로젝트입니다. 
-            분산 트랜잭션 상황에서의 동시성 결제 오류 방지를 위해 멱등성 필터링 레이어를 도입하고, 데이터 정합성을 철저히 지켰습니다.
-          </p>
-          <ul class="project-points">
-            <li>Kafka를 활용한 이벤트 소싱 기반 비동기 거래 내역 로깅 시스템 설계</li>
-            <li>DB Connection pool 병목점 모니터링을 통한 성능 튜닝으로 TPS 280% 향상</li>
-            <li>Redis를 이용한 다중 분산 이중 결제 방지 멱등 필터 구현</li>
-          </ul>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-          <div class="project-top">
-            <div class="project-tags">
-              <span class="badge badge-tech">Java / Spring Boot</span>
-              <span class="badge badge-tech">Redis Geospatial</span>
-              <span class="badge badge-tech">MySQL</span>
-              <span class="badge badge-tech">RabbitMQ</span>
-            </div>
-            <span class="project-date">2022.08 - 2023.11</span>
-          </div>
-          <h3 class="project-name">실시간 위치 기반 차량 배차 엔진 개발</h3>
-          <p class="project-summary">
-            운영자와 이용자의 위치 데이터를 수집하여 반경 내 최적의 승용 수단을 자동 배차 및 실시간 매칭해주는 서버 애플리케이션입니다. 
-            위치 갱신 주기를 제어하고 빠른 공간 매칭 성능을 달성했습니다.
-          </p>
-          <ul class="project-points">
-            <li>Redis GeoIndex를 도입하여 복잡한 위치 기반 반경 검색 처리 속도 최적화</li>
-            <li>매칭 매트릭스 계산 알고리즘의 비동기화 및 큐 기반 작업 분산</li>
-            <li>실시간 위치 이동 트래픽 과부하 방지를 위한 Throttling 및 배치 저장 설계</li>
-          </ul>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-          <div class="project-top">
-            <div class="project-tags">
-              <span class="badge badge-tech">Java / Spring Batch</span>
-              <span class="badge badge-tech">MySQL</span>
-              <span class="badge badge-tech">Docker</span>
-              <span class="badge badge-tech">Jenkins</span>
-            </div>
-            <span class="project-date">2020.02 - 2023.04</span>
-          </div>
-          <h3 class="project-name">정산 자동화 시스템 및 배포 환경 최적화</h3>
-          <p class="project-summary">
-            매월 수작업으로 대조하던 복잡한 정산 업무를 자동화하고 수억 건의 데이터 처리에 안정성을 더해준 Batch 프로세스 프로젝트입니다.
-          </p>
-          <ul class="project-points">
-            <li>Spring Batch Chunk 지향 프로세싱 구조를 적용해 청크 단위 대용량 트랜잭션 실행</li>
-            <li>기존 결제 테이블 풀 스캔 쿼리를 인덱스 커버링 쿼리로 튜닝하여 쿼리 타임아웃 100% 해소</li>
-            <li>Docker Compose 및 젠킨스를 연동하여 개발 및 운영 배포 환경의 완전한 컨테이너 자동화 구성</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Interactive Guestbook & Contact -->
-    <section id="guestbook" class="guestbook-section scroll-spy">
-      <div class="section-header">
-        <span class="section-subtitle">/ Guestbook & Feedback</span>
-        <h2 class="section-title">방명록 및 의견 작성</h2>
-        <div class="header-line"></div>
-        <p class="section-desc">자바스크립트 LocalStorage 데이터 조작 개념을 활용하여 로컬 브라우저에 저장되는 실시간 방명록 피드입니다.</p>
-      </div>
-
-      <div class="guestbook-layout">
-        <!-- Form -->
-        <div class="guestbook-form-card">
-          <h3>메시지 남기기</h3>
-          <form id="comment-form">
-            <div class="form-row">
               <div class="form-group">
-                <label for="input-author">이름 / 닉네임</label>
-                <input type="text" id="input-author" placeholder="이름을 입력하세요" required>
+                <label for="input-message">내용</label>
+                <textarea
+                  id="input-message"
+                  rows="4"
+                  placeholder="방문해 주셔서 감사합니다! 피드백이나 자유로운 의견을 적어주세요."
+                  required
+                ></textarea>
               </div>
-              <div class="form-group">
-                <label for="input-role">역할 / 직군</label>
-                <select id="input-role">
-                  <option value="developer">개발자 (Developer)</option>
-                  <option value="designer">디자이너 (Designer)</option>
-                  <option value="pm">기획자 / PM (Product Manager)</option>
-                  <option value="visitor" selected>일반 방문자 (Visitor)</option>
-                </select>
+              <div class="form-buttons">
+                <button type="submit" class="btn btn-primary btn-submit">
+                  등록하기
+                </button>
+                <button type="reset" class="btn btn-secondary btn-reset">
+                  초기화
+                </button>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="input-message">내용</label>
-              <textarea id="input-message" rows="4" placeholder="방문해 주셔서 감사합니다! 피드백이나 자유로운 의견을 적어주세요." required></textarea>
-            </div>
-            <div class="form-buttons">
-              <button type="submit" class="btn btn-primary btn-submit">등록하기</button>
-              <button type="reset" class="btn btn-secondary btn-reset">초기화</button>
-            </div>
-          </form>
-        </div>
+            </form>
+          </div>
 
-        <!-- Feed List -->
-        <div class="guestbook-feed-card">
-          <h3>최근 작성된 메시지 (<span id="comment-count">0</span>)</h3>
-          <div class="feed-wrapper" id="feed-list">
-            <!-- Messages will be injected by JavaScript -->
-            <div class="feed-empty-state" id="feed-empty">
-              <div class="empty-icon">✉️</div>
-              <p>첫 번째 메시지를 남겨보세요!</p>
+          <!-- Feed List -->
+          <div class="guestbook-feed-card">
+            <h3>최근 작성된 메시지 (<span id="comment-count">0</span>)</h3>
+            <div class="feed-wrapper" id="feed-list">
+              <!-- Messages will be injected by JavaScript -->
+              <div class="feed-empty-state" id="feed-empty">
+                <div class="empty-icon">✉️</div>
+                <p>첫 번째 메시지를 남겨보세요!</p>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <p class="mono">&lt;PJM /&gt; STUDY LOGS & PORTFOLIO</p>
+          <p class="footer-copy">© 2026 박정민 (pjmoo). All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+          <a
+            href="mailto:00pjmoooo@gmail.com"
+            class="footer-icon-link"
+            aria-label="Send Email"
+            >✉️ Email</a
+          >
+          <a
+            href="https://github.com/pjmoo"
+            target="_blank"
+            class="footer-icon-link"
+            aria-label="Open GitHub"
+            >💻 GitHub</a
+          >
+        </div>
       </div>
-    </section>
+    </footer>
 
-  </main>
+    <!-- Floating particles canvas for premium vibe -->
+    <canvas
+      id="ambient-particles"
+      class="particle-canvas"
+      aria-hidden="true"
+    ></canvas>
 
-  <!-- Footer -->
-  <footer id="footer">
-    <div class="footer-container">
-      <div class="footer-left">
-        <p class="mono">&lt;PJM /&gt; STUDY LOGS & PORTFOLIO</p>
-        <p class="footer-copy">© 2026 박정민 (pjmoo). All rights reserved.</p>
-      </div>
-      <div class="footer-right">
-        <a href="mailto:00pjmoooo@gmail.com" class="footer-icon-link" aria-label="Send Email">✉️ Email</a>
-        <a href="https://github.com/pjmoo" target="_blank" class="footer-icon-link" aria-label="Open GitHub">💻 GitHub</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Floating particles canvas for premium vibe -->
-  <canvas id="ambient-particles" class="particle-canvas" aria-hidden="true"></canvas>
-
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
