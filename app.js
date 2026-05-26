@@ -59,7 +59,7 @@ function initAmbientCanvas() {
       this.speedY = Math.random() * 0.4 + 0.1;
       this.speedX = (Math.random() - 0.5) * 0.25;
       this.opacity = Math.random() * 0.5 + 0.1;
-      this.glowColor = Math.random() > 0.5 ? 'rgba(96, 165, 250, ' : 'rgba(192, 132, 252, '; // Blue or Purple
+      this.glowColor = Math.random() > 0.5 ? 'rgba(123, 154, 204, ' : 'rgba(160, 139, 202, '; // Soft Blue or Lavender
     }
 
     update() {
